@@ -7,6 +7,11 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+#define		OPEN		1
+#define		CLOSE		2
+#define		TOGGLE		3
+#define		MOMENTARY	4
+
 #define COM3    "/dev/ttyS0"
 
 static int fd3;
@@ -70,12 +75,39 @@ int serial_init(void)
 	return 0;
 }
 
+int ctrl_relay(int relay_no, int ctrl)
+{
+	// cheking "relay_no"
+	if((relay_no <= 0) || (relay_no > 4))
+	{
+		puts("relay_no is wroing. !!\n");
+		return -1;
+	}
+
+	switch (ctrl)
+	{
+		case OPEN:
+			write(fd3, relay_open[relay_no - 1], 8); break;
+		case CLOSE:
+			write(fd3, relay_close[relay_no - 1], 8); break;
+		case TOGGLE:
+			write(fd3, relay_toggle[relay_no - 1], 8); break;
+		case MOMENTARY:
+			write(fd3, momentary[relay_no - 1], 8); break;
+		default:
+			// cheking "ctrl"
+			puts("ctrl number is wrong. !!\n"); return -1;
+	}
+	return 0;
+}
+
 int main(int argc, char* argv[])
 {
 	int bytes, i;
 
 	serial_init();
 
+#if 0
 	for(i=0;i<4;i++)
 	{
 		bytes = write(fd3, relay_open[i], 8);
@@ -93,7 +125,22 @@ int main(int argc, char* argv[])
 		bytes = write(fd3, momentary[i], 8);
 		sleep(1);
 	}
+#else
+	ctrl_relay(1, OPEN); sleep(1);
+	ctrl_relay(2, OPEN); sleep(1);
+	ctrl_relay(3, OPEN); sleep(1);
+	ctrl_relay(4, OPEN); sleep(1);
 
+	ctrl_relay(1, CLOSE); sleep(1);
+	ctrl_relay(2, CLOSE); sleep(1);
+	ctrl_relay(3, CLOSE); sleep(1);
+	ctrl_relay(4, CLOSE); sleep(1);
+
+	ctrl_relay(1, MOMENTARY); sleep(1);
+	ctrl_relay(2, MOMENTARY); sleep(1);
+	ctrl_relay(3, MOMENTARY); sleep(1);
+	ctrl_relay(4, MOMENTARY); sleep(1);
+#endif
 	close(fd3);
 
 	return 0;
