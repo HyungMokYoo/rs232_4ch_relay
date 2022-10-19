@@ -347,14 +347,14 @@ Control command format:
 +------------------+------------+----------------+----------------+---------+----------
 |                  | Frame head | Reserved bytes | Channel        | Command | checksum
 +------------------+-------------------------------------------------------------------
-|                  |            |                | 0x01 Channel 1 |         | 0xAB
-|                  |            |                | 0x02 Channel 2 |         | 0xAC
-|                  |            |                | 0x03 Channel 3 |         | 0xAD
-| Reading status   | 0x5556     | 0x000000       | 0x04 Channel 4 | 00      | 0xAE
-|                  |            |                | 0x05 Channel 5 |         | 0xAF
-|                  |            |                | 0x06 Channel 6 |         | 0xB0
-|                  |            |                | 0x07 Channel 7 |         | 0xB1
-|                  |            |                | 0x08 Channel 8 |         | 0xB2
+|                  |            |                | 0x01 Channel 1 |         | 0xAC
+|                  |            |                | 0x02 Channel 2 |         | 0xAD
+|                  |            |                | 0x03 Channel 3 |         | 0xAE
+| Reading status   | 0x5556     | 0x000000       | 0x04 Channel 4 | 00      | 0xAF
+|                  |            |                | 0x05 Channel 5 |         | 0xB0
+|                  |            |                | 0x06 Channel 6 |         | 0xB1
+|                  |            |                | 0x07 Channel 7 |         | 0xB2
+|                  |            |                | 0x08 Channel 8 |         | 0xB3
 +------------------+------------+----------------+----------------+---------+----------
 |                  |            |                | 0x01 Channel 1 |         | 0xAD
 |                  |            |                | 0x02 Channel 2 |         | 0xAE
@@ -365,14 +365,14 @@ Control command format:
 |                  |            |                | 0x07 Channel 7 |         | 0xB3
 |                  |            |                | 0x08 Channel 8 |         | 0xB4
 +------------------+------------+----------------+----------------+---------+----------
-|                  |            |                | 0x01 Channel 1 |         | 0xAD
-|                  |            |                | 0x02 Channel 2 |         | 0xAE
-|                  |            |                | 0x03 Channel 3 |         | 0xAF
-| Relay close      | 0x5556     | 0x000000       | 0x04 Channel 4 | 02      | 0xB0
-|                  |            |                | 0x05 Channel 5 |         | 0xB1
-|                  |            |                | 0x06 Channel 6 |         | 0xB2
-|                  |            |                | 0x07 Channel 7 |         | 0xB3
-|                  |            |                | 0x08 Channel 8 |         | 0xB4
+|                  |            |                | 0x01 Channel 1 |         | 0xAE
+|                  |            |                | 0x02 Channel 2 |         | 0xAF
+|                  |            |                | 0x03 Channel 3 |         | 0xB0
+| Relay close      | 0x5556     | 0x000000       | 0x04 Channel 4 | 02      | 0xB1
+|                  |            |                | 0x05 Channel 5 |         | 0xB2
+|                  |            |                | 0x06 Channel 6 |         | 0xB3
+|                  |            |                | 0x07 Channel 7 |         | 0xB4
+|                  |            |                | 0x08 Channel 8 |         | 0xB5
 +------------------+------------+----------------+----------------+--------------------
 |                  |            |                | 0x01 Channel 1 |         | 0xAF
 |                  |            |                | 0x02 Channel 2 |         | 0xB0
