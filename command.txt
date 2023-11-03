@@ -193,15 +193,15 @@ Note:AT commands must be uppercase, lowercase invalid.
 9600 Band ,8 Data bits,None Parity,1 Stop Bit. This commands has a delay function
 
 Read Status：
-Channel 1 ：AT+R1
-Channel 2 ：AT+R2
-Channel 3 ：AT+R3
-Channel 4 ：AT+R4
-Channel 5 ：AT+R5
-Channel 6 ：AT+R6
-Channel 7 ：AT+R7
-Channel 8 ：AT+R8
-Channel 9 ：AT+R9
+Channel 01：AT+R1
+Channel 02：AT+R2
+Channel 03：AT+R3
+Channel 04：AT+R4
+Channel 05：AT+R5
+Channel 06：AT+R6
+Channel 07：AT+R7
+Channel 08：AT+R8
+Channel 09：AT+R9
 Channel 10：AT+RA
 Channel 11：AT+RB
 Channel 12：AT+RC
@@ -211,15 +211,15 @@ Channel 15：AT+RF
 Channel 16：AT+RG
 
 Open：
-Channel 1：AT+O1
-Channel 2：AT+O2
-Channel 3：AT+O3
-Channel 4：AT+O4
-Channel 5：AT+O5
-Channel 6：AT+O6
-Channel 7：AT+O7
-Channel 8：AT+O8
-Channel 9：AT+O9
+Channel 01：AT+O1
+Channel 02：AT+O2
+Channel 03：AT+O3
+Channel 04：AT+O4
+Channel 05：AT+O5
+Channel 06：AT+O6
+Channel 07：AT+O7
+Channel 08：AT+O8
+Channel 09：AT+O9
 Channel 10：AT+OA
 Channel 11：AT+OB
 Channel 12：AT+OC
@@ -229,15 +229,15 @@ Channel 15：AT+OF
 Channel 16：AT+OG
 
 Close:
-Channel 1 : AT+C1
-Channel 2 : AT+C2
-Channel 3 : AT+C3
-Channel 4 : AT+C4
-Channel 5: AT+C5
-Channel 6: AT+C6
-Channel 7: AT+C7
-Channel 8: AT+C8
-Channel 9：AT+C9
+Channel 01：AT+C1
+Channel 02：AT+C2
+Channel 03：AT+C3
+Channel 04：AT+C4
+Channel 05：AT+C5
+Channel 06：AT+C6
+Channel 07：AT+C7
+Channel 08：AT+C8
+Channel 09：AT+C9
 Channel 10：AT+CA
 Channel 11：AT+CB
 Channel 12：AT+CC
@@ -247,15 +247,15 @@ Channel 15：AT+CF
 Channel 16：AT+CG
 
 Toggle (Self-locking)
-Channel 1：AT+T1
-Channel 2：AT+T2
-Channel 3：AT+T3
-Channel 4：AT+T4
-Channel 5：AT+T5
-Channel 6：AT+T6
-Channel 7：AT+T7
-Channel 8：AT+T8
-Channel 9 ：AT+T9
+Channel 01：AT+T1
+Channel 02：AT+T2
+Channel 03：AT+T3
+Channel 04：AT+T4
+Channel 05：AT+T5
+Channel 06：AT+T6
+Channel 07：AT+T7
+Channel 08：AT+T8
+Channel 09：AT+T9
 Channel 10：AT+TA
 Channel 11：AT+TB
 Channel 12：AT+TC
@@ -265,15 +265,15 @@ Channel 15：AT+TF
 Channel 16：AT+TG
 
 Latch (Inter-locking)
-Channel 1：AT+L1
-Channel 2：AT+L2
-Channel 3：AT+L3
-Channel 4：AT+L4
-Channel 5：AT+L5
-Channel 6：AT+L6
-Channel 7：AT+L7
-Channel 8：AT+L8
-Channel 9 ：AT+L9
+Channel 01：AT+L1
+Channel 02：AT+L2
+Channel 03：AT+L3
+Channel 04：AT+L4
+Channel 05：AT+L5
+Channel 06：AT+L6
+Channel 07：AT+L7
+Channel 08：AT+L8
+Channel 09：AT+L9
 Channel 10：AT+LA
 Channel 11：AT+LB
 Channel 12：AT+LC
@@ -283,15 +283,15 @@ Channel 15：AT+LF
 Channel 16：AT+LG
 
 Momentary (Non-locking)
-Channel 1：AT+M1
-Channel 2：AT+M2
-Channel 3：AT+M3
-Channel 4：AT+M4
-Channel 5：AT+M5
-Channel 6：AT+M6
-Channel 7：AT+M7
-Channel 8：AT+M8
-Channel 9 ：AT+M9
+Channel 01：AT+M1
+Channel 02：AT+M2
+Channel 03：AT+M3
+Channel 04：AT+M4
+Channel 05：AT+M5
+Channel 06：AT+M6
+Channel 07：AT+M7
+Channel 08：AT+M8
+Channel 09：AT+M9
 Channel 10：AT+MA
 Channel 11：AT+MB
 Channel 12：AT+MC
@@ -301,15 +301,15 @@ Channel 15：AT+MF
 Channel 16：AT+MG
 
 Delay
-Channel 1：AT+D1=XXXX
-Channel 2：AT+D2=XXXX
-Channel 3：AT+D3=XXXX
-Channel 4：AT+D4=XXXX
-Channel 5：AT+D5=XXXX
-Channel 6：AT+D6=XXXX
-Channel 7：AT+D7=XXXX
-Channel 8：AT+D8=XXXX
-Channel 9：AT+D9=XXXX
+Channel 01：AT+D1=XXXX
+Channel 02：AT+D2=XXXX
+Channel 03：AT+D3=XXXX
+Channel 04：AT+D4=XXXX
+Channel 05：AT+D5=XXXX
+Channel 06：AT+D6=XXXX
+Channel 07：AT+D7=XXXX
+Channel 08：AT+D8=XXXX
+Channel 09：AT+D9=XXXX
 Channel 10：AT+DA=XXXX
 Channel 11：AT+DB=XXXX
 Channel 12：AT+DC=XXXX
@@ -427,15 +427,15 @@ Channel 15 ：55 56 00 00 00 0F 00 BA
 Channel 16 ：55 56 00 00 00 10 00 BB
 
 2. Relay open (issue this command ，Relay open , COM connect to NO ）
-Channel 1  ：55 56 00 00 00 01 01 AD
-Channel 2  ：55 56 00 00 00 02 01 AE
-Channel 3  ：55 56 00 00 00 03 01 AF
-Channel 4  ：55 56 00 00 00 04 01 B0
-Channel 5  ：55 56 00 00 00 05 01 B1
-Channel 6  ：55 56 00 00 00 06 01 B2
-Channel 7  ：55 56 00 00 00 07 01 B3
-Channel 8  ：55 56 00 00 00 08 01 B4
-Channel 9  ：55 56 00 00 00 09 01 B5
+Channel 01 ：55 56 00 00 00 01 01 AD
+Channel 02 ：55 56 00 00 00 02 01 AE
+Channel 03 ：55 56 00 00 00 03 01 AF
+Channel 04 ：55 56 00 00 00 04 01 B0
+Channel 05 ：55 56 00 00 00 05 01 B1
+Channel 06 ：55 56 00 00 00 06 01 B2
+Channel 07 ：55 56 00 00 00 07 01 B3
+Channel 08 ：55 56 00 00 00 08 01 B4
+Channel 09 ：55 56 00 00 00 09 01 B5
 Channel 10 ：55 56 00 00 00 0A 01 B6
 Channel 11 ：55 56 00 00 00 0B 01 B7
 Channel 12 ：55 56 00 00 00 0C 01 B8
@@ -445,15 +445,15 @@ Channel 15 ：55 56 00 00 00 0F 01 BB
 Channel 16 ：55 56 00 00 00 10 01 BC
 
 3. Relay close (issue this command ，Relay close , COM disconnect NO , and COM connect to NC ）
-Channel 1 ：55 56 00 00 00 01 02 AE
-Channel 2 ：55 56 00 00 00 02 02 AF
-Channel 3 ：55 56 00 00 00 03 02 B0
-Channel 4 ：55 56 00 00 00 04 02 B1
-Channel 5 ：55 56 00 00 00 05 02 B2
-Channel 6 ：55 56 00 00 00 06 02 B3
-Channel 7 ：55 56 00 00 00 07 02 B4
-Channel 8 ：55 56 00 00 00 08 02 B5
-Channel 9  ：55 56 00 00 00 09 02 B6
+Channel 01 ：55 56 00 00 00 01 02 AE
+Channel 02 ：55 56 00 00 00 02 02 AF
+Channel 03 ：55 56 00 00 00 03 02 B0
+Channel 04 ：55 56 00 00 00 04 02 B1
+Channel 05 ：55 56 00 00 00 05 02 B2
+Channel 06 ：55 56 00 00 00 06 02 B3
+Channel 07 ：55 56 00 00 00 07 02 B4
+Channel 08 ：55 56 00 00 00 08 02 B5
+Channel 09 ：55 56 00 00 00 09 02 B6
 Channel 10 ：55 56 00 00 00 0A 02 B7
 Channel 11 ：55 56 00 00 00 0B 02 B8
 Channel 12 ：55 56 00 00 00 0C 02 B9
@@ -463,15 +463,15 @@ Channel 15 ：55 56 00 00 00 0F 02 BC
 Channel 16 ：55 56 00 00 00 10 02 BD
 
 4. Relay toggle（Relay status reversal，if COM connect to NO，this commands will Disconnect COM to NO and Reverse COM connect to NC，and vice versa）
-Channel 1 ：55 56 00 00 00 01 03 AF
-Channel 2 ：55 56 00 00 00 02 03 B0
-Channel 3 ：55 56 00 00 00 03 03 B1
-Channel 4 ：55 56 00 00 00 04 03 B2
-Channel 5 ：55 56 00 00 00 05 03 B3
-Channel 6 ：55 56 00 00 00 06 03 B4
-Channel 7 ：55 56 00 00 00 07 03 B5
-Channel 8 ：55 56 00 00 00 08 03 B6
-Channel 9  ：55 56 00 00 00 09 03 B7
+Channel 01 ：55 56 00 00 00 01 03 AF
+Channel 02 ：55 56 00 00 00 02 03 B0
+Channel 03 ：55 56 00 00 00 03 03 B1
+Channel 04 ：55 56 00 00 00 04 03 B2
+Channel 05 ：55 56 00 00 00 05 03 B3
+Channel 06 ：55 56 00 00 00 06 03 B4
+Channel 07 ：55 56 00 00 00 07 03 B5
+Channel 08 ：55 56 00 00 00 08 03 B6
+Channel 09 ：55 56 00 00 00 09 03 B7
 Channel 10 ：55 56 00 00 00 0A 03 B8
 Channel 11 ：55 56 00 00 00 0B 03 B9
 Channel 12 ：55 56 00 00 00 0C 03 BA
@@ -481,15 +481,15 @@ Channel 15 ：55 56 00 00 00 0F 03 BD
 Channel 16 ：55 56 00 00 00 10 03 BE
 
 5. Relay Interlock
-Channel 1 ：55 56 00 00 00 01 04 B0
-Channel 2 ：55 56 00 00 00 02 04 B1
-Channel 3 ：55 56 00 00 00 03 04 B2
-Channel 4 ：55 56 00 00 00 04 04 B3
-Channel 5 ：55 56 00 00 00 05 04 B4
-Channel 6 ：55 56 00 00 00 06 04 B5
-Channel 7 ：55 56 00 00 00 07 04 B6
-Channel 8 ：55 56 00 00 00 08 04 B7
-Channel 9  ：55 56 00 00 00 09 04 B8
+Channel 01 ：55 56 00 00 00 01 04 B0
+Channel 02 ：55 56 00 00 00 02 04 B1
+Channel 03 ：55 56 00 00 00 03 04 B2
+Channel 04 ：55 56 00 00 00 04 04 B3
+Channel 05 ：55 56 00 00 00 05 04 B4
+Channel 06 ：55 56 00 00 00 06 04 B5
+Channel 07 ：55 56 00 00 00 07 04 B6
+Channel 08 ：55 56 00 00 00 08 04 B7
+Channel 09 ：55 56 00 00 00 09 04 B8
 Channel 10 ：55 56 00 00 00 0A 04 B9
 Channel 11 ：55 56 00 00 00 0B 04 BA
 Channel 12 ：55 56 00 00 00 0C 04 BB
@@ -499,15 +499,15 @@ Channel 15 ：55 56 00 00 00 0F 04 BE
 Channel 16 ：55 56 00 00 00 10 04 BF
 
 6. Relay momentary（Relay COM connect to NO，disconnect after 500MS ）
-Channel 1 ：55 56 00 00 00 01 05 B1
-Channel 2 ：55 56 00 00 00 02 05 B2
-Channel 3 ：55 56 00 00 00 03 05 B3
-Channel 4 ：55 56 00 00 00 04 05 B4
-Channel 5 ：55 56 00 00 00 05 05 B5
-Channel 6 ：55 56 00 00 00 06 05 B6
-Channel 7 ：55 56 00 00 00 07 05 B7
-Channel 8 ：55 56 00 00 00 08 05 B8
-Channel 9  ：55 56 00 00 00 09 05 B9
+Channel 01 ：55 56 00 00 00 01 05 B1
+Channel 02 ：55 56 00 00 00 02 05 B2
+Channel 03 ：55 56 00 00 00 03 05 B3
+Channel 04 ：55 56 00 00 00 04 05 B4
+Channel 05 ：55 56 00 00 00 05 05 B5
+Channel 06 ：55 56 00 00 00 06 05 B6
+Channel 07 ：55 56 00 00 00 07 05 B7
+Channel 08 ：55 56 00 00 00 08 05 B8
+Channel 09 ：55 56 00 00 00 09 05 B9
 Channel 10 ：55 56 00 00 00 0A 05 BA
 Channel 11 ：55 56 00 00 00 0B 05 BB
 Channel 12 ：55 56 00 00 00 0C 05 BC
@@ -558,15 +558,15 @@ Return command format:
 2 return command
 
 1. Return relay open（return this command，mean COM connect to NO ）
-Channel 1 ：33 3C 00 00 00 01 01 71
-Channel 2 ：33 3C 00 00 00 02 01 72
-Channel 3 ：33 3C 00 00 00 03 01 73
-Channel 4 ：33 3C 00 00 00 04 01 74
-Channel 5 ：33 3C 00 00 00 05 01 75
-Channel 6 ：33 3C 00 00 00 06 01 76
-Channel 7 ：33 3C 00 00 00 07 01 77
-Channel 8 ：33 3C 00 00 00 08 01 78
-Channel 9  ：33 3C 00 00 00 09 01 79
+Channel 01 ：33 3C 00 00 00 01 01 71
+Channel 02 ：33 3C 00 00 00 02 01 72
+Channel 03 ：33 3C 00 00 00 03 01 73
+Channel 04 ：33 3C 00 00 00 04 01 74
+Channel 05 ：33 3C 00 00 00 05 01 75
+Channel 06 ：33 3C 00 00 00 06 01 76
+Channel 07 ：33 3C 00 00 00 07 01 77
+Channel 08 ：33 3C 00 00 00 08 01 78
+Channel 09 ：33 3C 00 00 00 09 01 79
 Channel 10 ：33 3C 00 00 00 0A 01 7A
 Channel 11 ：33 3C 00 00 00 0B 01 7B
 Channel 12 ：33 3C 00 00 00 0C 01 7C
@@ -576,15 +576,15 @@ Channel 15 ：33 3C 00 00 00 0F 01 7F
 Channel 16 ：33 3C 00 00 00 10 01 80
 
 2. Return relay close（return this command，mean COM disconnect NO , and COM connect to NC ）
-Channel 1 ：33 3C 00 00 00 01 02 72
-Channel 2 ：33 3C 00 00 00 02 02 73
-Channel 3 ：33 3C 00 00 00 03 02 74
-Channel 4 ：33 3C 00 00 00 04 02 75
-Channel 5 ：33 3C 00 00 00 05 02 76
-Channel 6 ：33 3C 00 00 00 06 02 77
-Channel 7 ：33 3C 00 00 00 07 02 78
-Channel 8 ：33 3C 00 00 00 08 02 79
-Channel 9  ：33 3C 00 00 00 09 02 7A
+Channel 01 ：33 3C 00 00 00 01 02 72
+Channel 02 ：33 3C 00 00 00 02 02 73
+Channel 03 ：33 3C 00 00 00 03 02 74
+Channel 04 ：33 3C 00 00 00 04 02 75
+Channel 05 ：33 3C 00 00 00 05 02 76
+Channel 06 ：33 3C 00 00 00 06 02 77
+Channel 07 ：33 3C 00 00 00 07 02 78
+Channel 08 ：33 3C 00 00 00 08 02 79
+Channel 09 ：33 3C 00 00 00 09 02 7A
 Channel 10 ：33 3C 00 00 00 0A 02 7B
 Channel 11 ：33 3C 00 00 00 0B 02 7C
 Channel 12 ：33 3C 00 00 00 0C 02 7D
